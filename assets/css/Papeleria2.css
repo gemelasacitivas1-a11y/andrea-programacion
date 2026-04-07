@@ -6,7 +6,9 @@
     --white:#ffffff;
     --black:#000000;
 }
-
+*,*:before,*after{
+    box-sizing: inherit;
+}
 body{
     margin:0;
     padding:0;
@@ -34,12 +36,22 @@ ul{
     text-decoration: none;
 }le quita la barra de abajo a el texto*/
 .boton{
-
+    width:400px;
+    background-color:red;
+    color:yellow;
+    font-size: 30px;/*tamaño de la letra*/
+    padding: 20px 60px;/*espacio interno*/
+    height: 80px;/*altura del boton*/
+    margin-top: 30px;/* borde del boton con lo de arriba*/
+}
+.boton:hover{
+    background-color:yellow;
+    color: red;
 }
 .texto-de-arriba{
     display: flex;
     gap: 60px; /*espacio entre los textos*/
-    padding: 40px 40px 20px 600px;/*espacio del texto con el borde*/
+    padding: 40px 40px 20px 400px;/*espacio del texto con el borde*/
 }
 
 .texto-de-arriba li a{
@@ -121,4 +133,76 @@ h3{
     padding: 0px 50px 0px 0px;
     gap: 50px;
     
+}
+/*contacto*/
+.title{
+    color:black;
+}
+.contacto{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+input[type="text"],[type="email"],[type="date"]{
+    width: 100%;
+    border: 1px solid gray;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+select{
+    width: 100%;
+    border: 1px solid var(--terciary-color);
+    padding: 3px;
+}
+input[type="submit"]{
+    
+    width: 80%;
+    display:block;
+    background-color: var( #000000);
+    color: var(#F0F8A4);
+    padding: 15px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 3px;
+
+}
+.contacto .col{
+    padding: 30px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.center{
+    text-align: center;
+}
+/*nosotros*/
+body{
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+}
+.linea1{
+background-color: white;
+display:flex;
+color: black;
+height: 400px;
+flex-direction: column;
+text-align: center;
+}
+.linea2{
+    height: 400px;
+    background-color:hsl(190, 100%, 75%);
+    text-align: center;
+}
+.linea3{
+    height: 400px;
+    background-color:white ;
+    text-align: center;
+}
+.texto{
+    padding: 0px 80px;
 }
