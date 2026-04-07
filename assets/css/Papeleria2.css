@@ -1,0 +1,124 @@
+:root{
+    --main-color:#CCFFFF;
+    --secundary-color:#317cfe;
+    --terciary-color: #9a0079;
+    --cuarto-color:#FEF2FC;
+    --white:#ffffff;
+    --black:#000000;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:cursive;
+    font-weight: 100; 
+    font-size: 1rem;
+}
+.logo{
+width: 150px;
+}
+html{
+    box-sizing: border-box;
+}
+header{
+    background-color: var(--cuarto-color); /*color de la barra de arriba*/
+    justify-content: space-between;/* hace que se pongan en fila*/
+    color: white;
+    display:flex;
+    padding:0px 5px;/*tamaño de la barra con respecto a lo que este adentro*/
+}
+ul{
+    list-style: none;
+}
+/*a{
+    text-decoration: none;
+}le quita la barra de abajo a el texto*/
+.boton{
+
+}
+.texto-de-arriba{
+    display: flex;
+    gap: 60px; /*espacio entre los textos*/
+    padding: 40px 40px 20px 600px;/*espacio del texto con el borde*/
+}
+
+.texto-de-arriba li a{
+    color: var(--terciary-color);
+    font-size: 30px;
+}
+.texto-de-arriba li a:hover{
+    color:var(--secundary-color)
+}
+.arriba-imagen{
+    font-size: 80px;/*tamaño de la letra*/
+    color: var(--secundary-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;/*tipo de letra*/
+    font-weight: 920;/*pone gordita la letra*/
+    text-align: center;/*pa que este en el centro*/
+    margin-top: 0%;/*pa que no exista margen entre la barra y el texto*/
+}
+/*termina la barra de arriba*/
+.img-flid{
+    max-width: 1500px;
+    margin-top: 0%;
+}
+.container-fluid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col{
+    color: #003287;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 40;
+}
+.Productos{
+    width: 400px;
+}
+.subtitulo{
+    font-size: 60px;/*tamaño de la letra*/
+    color: var(--terciary-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;/*tipo de letra*/
+    text-align: center;/*pa que este en el centro*/
+    margin-top: 0%;/*pa que no exista margen entre la barra y el texto*/
+}
+h3{
+    font-size: 40px;/*tamaño de la letra*/
+    color: var(--terciary-color);
+    font-family:'Lucida Sans';
+}
+.concepto{
+    font-size: 20px;
+    color:black;
+    font-family:'Lucida Sans';
+}
+.corte{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*se divide en dos columnas*/
+}
+
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.logo-footer{
+    width :150px;
+}
+.black{
+    background-color:var(--cuarto-color);
+    color: var(--terciary-color);
+}
+.footer ul li a{
+    color: var(--terciary-colore);
+}
+.footer ul li a:hover{
+    color: var(--secundary-color);
+}
+.footer h3{
+    color: var(--grey-dark);
+}
+.final{
+    padding: 0px 50px 0px 0px;
+    gap: 50px;
+    
+}
