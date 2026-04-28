@@ -7,7 +7,7 @@
      <link rel="stylesheet" href="assets/css/Papeleria2.css">
      <link rel="stylesheet" href= "assets/fontawesome-free-7.2.0-web/css/all.css">
 </head>
-<body>
+
 <header>
     <div>
         <img src="assets/images/logo.jpg" alt="logo-esquina" class="logo">
@@ -21,55 +21,64 @@
                 <li><a href="contacto.html" target="_self">Contacto</a></li>
             </ul>
         </nav>
-     </header>
+    </header>
 
-     <section>
-        <div class="contacto">
-    <h1 class="center">Contactos</h1>
-    <p class="center">¡Cotiza con nosotros YA!</p>
-    </div>
-   <div class="col">
-            <p>Puedes encontrarnos en alguna de nuestras sucursales</p>
-            <ul>
-                <li>Aragua</li>
-                <ul>Palo Negro</ul>
-            </ul>
-            <ul>
-   </div>
-        <div class="col pb-80 contacto">
-            <form name="form1" action="#" method="get">
-            <label>Nombre</label>
-           <input type="text" name="nombre" placeholder="ingresa tu nombre" required>
-            <label>Apellido</label>
-            <input type="text" name="ape" placeholder="ingresa tu apellido" required>
-            <label>sexo</label>
-            <select name="sexo">
-                <option value=""> seleccione una opcion</option>
-                <option value="f">femenino</option>
-                <option value="m">masculino</option>
-                </select>
+    <section class="corte paddingC">
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="logo-placeholder">
+                <img src="assets/images/logoF.png" alt="Logo EscuelaPlus" style="max-width: 90px;">
+            </div>
+            <div class="info-details">
+                <h3>Ubicación</h3>
+                <p>Aragua, Maracay</p>
+                
+                <h3>Correo Electrónico</h3>
+                <p>escuelaplus@gmail.com</p>
+                
+                <h3>Teléfono</h3>
+                <p>+58 243 123 4567</p>
+            </div>
+        </div>
 
-        <label>Email</label>
-       <input type="email" name="email" placeholder="email">
-          
-        <label>Fecha de nacimiento</label>
-        <input type="date" name="fercha-nac" placeholder="Escribe tu fecha de Nacimiento">
-        <label>ciudad</label>
-        <select name="ciudad">
-            <option value="maracay">maracay</option>
-            <option value="valencia">valencia</option>
-            <option value="maracaibo">maracaibo</option>
-            <option value="barquisimeto">barquisimeto</option>
-            <option value="caracas">caracas</option>
-        </select>
-        <label>Mensaje</label>
-        <textarea name="mensaje" rows="5" cols="100"></textarea>
-        <input type="submit" value="contacto">
+        <div class="contact-form">
+            <h2>Escríbenos</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="nombre">Nombre y Apellidos</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 0412 1234567" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Dirección de domicilio" required>
+                </div>
+
+                <button type="submit" class="btn-enviar">ENVIAR</button>
+            </form>
         </div>
     </div>
-
+    <div class="text-C">
+            <h3 class="solo">Para Marcas y Distribuidores</h3>
+                <p>"Ustedes ponen las herramientas, nosotros ponemos el lienzo. Buscamos aliados que crean en
+                     el poder de la creatividad infantil y la calidad educativa. Si representas una marca que busca 
+                     llegar a las manos de los pequeños artistas del futuro, queremos ser tu vitrina. Escríbenos y 
+                     hagamos que cada trazo cuente."</p>
+            <h3 class="solo">Para Instituciones y Padres</h3>
+                <p>"Sabemos que no solo compras útiles; estás invirtiendo en el potencial de tus hijos y alumnos.
+                     Seleccionamos cuidadosamente cada pincel y cuaderno para que el aprendizaje sea una aventura vibrante.
+                      ¿Buscas algo específico o una cotización personalizada? Escríbenos y permítenos acompañarte en este ciclo
+                       escolar."</p>
+                       <h1 class="motivador">¡Esperamos tu mensaje!</h1>
+    </div>
     </section>
-     <footer class="black">
+
+   <footer class="black">
         <section class="footer final">
             <img src="assets/images/logo.jpg" alt="logo" class="logo-footer">
         <div class="footer-col">
@@ -85,7 +94,7 @@
                 <h3 class="concepto centro">Contactanos</h3>
                 <ul>
                     <li>Palo Negro-Aragua</li>
-                    <li></i>0412-o36o137</li>
+                    <li></i>+58 243 123 4567</li>
                     <li></li></i>Escuelaplus</li>
                 </ul>
             </div>

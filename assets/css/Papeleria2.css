@@ -36,17 +36,27 @@ ul{
     text-decoration: none;
 }le quita la barra de abajo a el texto*/
 .boton{
-    width:400px;
-    background-color:red;
-    color:yellow;
-    font-size: 30px;/*tamaño de la letra*/
-    padding: 20px 60px;/*espacio interno*/
+    /* Colores y Fondo */
+    background-color: #ffdae9; /* Rosa claro pastel */
+    color: var(--terciary-color);           /* Rosado oscuro para el texto */
+    border: 3px solid var(--secundary-color);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+  
+  /* Forma y Espaciado */
+    border-radius: 20px;       /* Bordes redondeados */
+    padding: 12px 80px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animación suave al cambiar */
+    outline: none;
     height: 80px;/*altura del boton*/
-    margin-top: 30px;/* borde del boton con lo de arriba*/
+    margin-top: 30px; /* borde del boton con lo de arriba*/
 }
 .boton:hover{
-    background-color:yellow;
-    color: red;
+    background-color:var(--terciary-color);
+    color:white;
 }
 .texto-de-arriba{
     display: flex;
@@ -72,8 +82,9 @@ ul{
 /*termina la barra de arriba*/
 .img-flid{
     max-width: 1500px;
-    margin-top: 0%;
-}
+    margin-top: auto;
+    padding: 0%;
+ }
 .container-fluid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -107,6 +118,11 @@ h3{
 .corte{
     display: grid;
     grid-template-columns: 1fr 1fr; /*se divide en dos columnas*/
+    padding: 50px 100px;
+    gap: 50px;
+}
+.mancha{
+    padding: 90px 0px 0px 200px;
 }
 
 .footer{
@@ -134,50 +150,6 @@ h3{
     gap: 50px;
     
 }
-/*contacto*/
-.title{
-    color:black;
-}
-.contacto{
-    display: grid;
-    grid-template-columns:1fr 1fr;
-}
-input[type="text"],[type="email"],[type="date"]{
-    width: 100%;
-    border: 1px solid gray;
-    padding: 12px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-
-}
-select{
-    width: 100%;
-    border: 1px solid var(--terciary-color);
-    padding: 3px;
-}
-input[type="submit"]{
-    
-    width: 80%;
-    display:block;
-    background-color: var( #000000);
-    color: var(#F0F8A4);
-    padding: 15px;
-}
-textarea{
-    width: 100%;
-    border: 1px solid rgb(255, 0, 0);
-    padding: 3px;
-
-}
-.contacto .col{
-    padding: 30px;
-}
-.pb-80{
-    padding-bottom: 80px;
-}
-.center{
-    text-align: center;
-}
 /*nosotros*/
 body{
 margin: 0;
@@ -188,21 +160,247 @@ flex-direction: column;
 .linea1{
 background-color: white;
 display:flex;
-color: black;
+color:#555;
 height: 400px;
 flex-direction: column;
 text-align: center;
+padding: 50px 0px;
 }
 .linea2{
     height: 400px;
-    background-color:hsl(190, 100%, 75%);
+    background-color:#99c7f9;
     text-align: center;
+    padding: 50px 0px;
 }
 .linea3{
     height: 400px;
     background-color:white ;
     text-align: center;
+    color: #555;
+    padding: 50px 0px;
 }
-.texto{
+.text-nosotros{
+    padding: 0px 200px;
+    font-size: 20px;
+}
+.subtitulo-n{
+    color: #c11384;
+    font-size: 30px;
+    padding: 0px 20px;
+}
+/*contacto*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor Principal */
+.contact-container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    border-radius:15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+    
+}
+
+/* Lado Izquierdo (Azul con toques blancos) */
+.contact-info {
+    flex: 1;
+    background-color: #0056b3; /* Azul principal */
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-placeholder {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    border: 2px;
+}
+
+.info-details h3 {
+    font-size: 1.1rem;
+    color: #ffc1e3; /* Rosado claro para títulos */
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-details p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Lado Derecho (Blanco y Rosado) */
+.contact-form {
+    flex: 1.2;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.contact-form h2 {
+    color: #0056b3;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #f0f0f0;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #ff85c0; 
+}
+
+/* Botón Enviar */
+.btn-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff85c0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: #f767ac;
+}
+
+.corte{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*se divide en dos columnas*/
+}
+.paddingC{
+    padding: 50px;
+}
+.text-C{
     padding: 0px 80px;
+    color:#555;
+}
+.solo{
+  font-family:cursive;  
+}
+.motivador{
+    font-family:cursive;  
+    padding: 25px 0px;
+}
+/*productos*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-productos {
+    max-width: 1100px;
+    margin: 50px 50px;
+}
+
+.titulo-seccion {
+    color: #0056b3; /* Azul igual al de contacto */
+    padding: 0px 140px 0px 460px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* Grid para computadoras */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas fijas */
+    gap: 70px;
+}
+
+/* Tarjeta de producto */
+.tarjeta-producto {
+    border: 2px solid #f0f0f0; /* Borde simple */
+    padding: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.foto-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.marca-tag {
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Colores por marca */
+.tag-crayola { background-color: #ffcc00; color: #333; }
+.tag-norma   { background-color: #0056b3; }
+.tag-paper   { background-color: #ff85c0; }
+.tag-kores   { background-color: #e30613; }
+
+.tarjeta-producto h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tarjeta-producto p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+    min-height: 40px; /* Para alinear los botones */
+}
+
+/* Botón Agregar  */
+.btn-agregar {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff85c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-agregar:active {
+    background-color: #ff2a91;
 }
