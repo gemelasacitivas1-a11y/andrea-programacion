@@ -32,9 +32,7 @@ header{
 ul{
     list-style: none;
 }
-/*a{
-    text-decoration: none;
-}le quita la barra de abajo a el texto*/
+
 .boton{
     /* Colores y Fondo */
     background-color: #ffdae9; /* Rosa claro pastel */
@@ -128,6 +126,7 @@ h3{
 .footer{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    
 }
 .logo-footer{
     width :150px;
@@ -146,47 +145,78 @@ h3{
     color: var(--grey-dark);
 }
 .final{
-    padding: 0px 50px 0px 0px;
+    padding: 40px 50px 0px 0px;
     gap: 50px;
     
 }
 /*nosotros*/
-body{
-margin: 0;
-padding: 0;
-display: flex;
-flex-direction: column;
+body {
+    background-color: #ffffff;
 }
-.linea1{
-background-color: white;
-display:flex;
-color:#555;
-height: 400px;
-flex-direction: column;
-text-align: center;
-padding: 50px 0px;
+
+.contenedor-nosotros {
+    width: 100%;
 }
-.linea2{
-    height: 400px;
-    background-color:#99c7f9;
+
+.franja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
     text-align: center;
-    padding: 50px 0px;
 }
-.linea3{
-    height: 400px;
-    background-color:white ;
-    text-align: center;
-    color: #555;
-    padding: 50px 0px;
+.contenido {
+    max-width: 800px;
+    width: 100%;
 }
-.text-nosotros{
-    padding: 0px 200px;
-    font-size: 20px;
+
+
+/* --- FRANJA SUPERIOR (Blanco/Rosado) --- */
+.franja-superior {
+    background-color: #ffffff;
+    color: #0056b3; /* Azul para el título */
 }
-.subtitulo-n{
-    color: #c11384;
-    font-size: 30px;
-    padding: 0px 20px;
+
+.franja-superior h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* --- FRANJA DEL MEDIO (Azul Oscuro) --- */
+.franja-medio {
+    background-color:#0056b3; /* Azul oscuro */
+    color: #ffffff; /* Letras blancas */
+}
+
+.franja-medio h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff8ccb; 
+}
+
+.franja-medio p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* --- FRANJA INFERIOR (Rosado Claro/Blanco) --- */
+.franja-inferior {
+    color: #0056b3;
+}
+
+.franja-inferior h2 {
+    margin-bottom: 15px;
+}
+
+
+/* Responsivo para móviles */
+@media (max-width: 600px) {
+    .franja {
+        padding: 50px 15px;
+    }
+    .franja-superior h1 {
+        font-size: 1.8rem;
+    }
 }
 /*contacto*/
 * {
@@ -228,7 +258,7 @@ padding: 50px 0px;
 
 .info-details h3 {
     font-size: 1.1rem;
-    color: #ffc1e3; /* Rosado claro para títulos */
+    color: #ff8ccb; /* Rosado claro para títulos */
     margin-top: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -308,6 +338,7 @@ padding: 50px 0px;
 }
 .solo{
   font-family:cursive;  
+  color:#9a0079;
 }
 .motivador{
     font-family:cursive;  
@@ -323,28 +354,29 @@ padding: 50px 0px;
 .contenedor-productos {
     max-width: 1100px;
     margin: 50px 50px;
+
+}
+.grid-productos{
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    display: grid;
+    gap:60px;
+    align-items: center;
+    padding: 30px 180px;
 }
 
 .titulo-seccion {
-    color: #0056b3; /* Azul igual al de contacto */
-    padding: 0px 140px 0px 460px;
+    color: #0056b3; 
+    padding: 0px 110px 0px 490px;
     margin-bottom: 40px;
     font-size: 2rem;
 }
-
-/* Grid para computadoras */
-.grid-productos {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columnas fijas */
-    gap: 70px;
-}
-
 /* Tarjeta de producto */
 .tarjeta-producto {
-    border: 2px solid #f0f0f0; /* Borde simple */
-    padding: 60px;
+    border: 2px solid #f0f0f0; 
+    padding: 60px ;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 40px;
+    
 }
 
 .foto-placeholder {
